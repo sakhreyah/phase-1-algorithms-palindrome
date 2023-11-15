@@ -1,5 +1,14 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  if (revWord(word) === word) { return true } else return false
+}
+function revWord(word) {
+
+  const arr = []
+  for (i = word.length - 1; i >= 0; i--) {
+    arr.push(word[i])
+  }
+  return arr.join("")
 }
 
 /* 
